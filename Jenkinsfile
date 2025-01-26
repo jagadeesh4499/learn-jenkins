@@ -22,6 +22,7 @@ pipeline {
     post {
         always {
             echo "This section runs always"
+            deleteDir() // Used to delete previous builds to reduce memory usage
         }
         success {
             echo "This section runs when pipeline is success"
