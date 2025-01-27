@@ -7,3 +7,5 @@ sudo yum install jenkins -y
 sudo systemctl daemon-reload
 sudo systemctl start jenkins
 sudo systemctl enable jenkins
+
+# Install java in agent node before configuring in jenkins --> sudo yum install java-17-openjdk -y
